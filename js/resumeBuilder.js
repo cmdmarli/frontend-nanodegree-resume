@@ -111,9 +111,10 @@ var projects =
 		{
 			$("#projects").append(HTMLprojectStart);
 			$("#projects").append(HTMLprojectTitle.replace("%data%", projects.brands[cnt].brandtitle));
+			$("#projects").append(HTMLprojectImage.replace("%data%", projects.brands[cnt].brandImage));
 			$("#projects").append(HTMLprojectDates.replace("%data%", projects.brands[cnt].date));
 			$("#projects").append(HTMLprojectDescription.replace("%data%", projects.brands[cnt].brandDescription));
-			$("#projects").append(HTMLprojectImage.replace("%data%", projects.brands[cnt].brandImage));
+
 		}
 	}
 };
