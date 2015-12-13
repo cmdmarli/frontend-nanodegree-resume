@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderRole = '<span class="grey-text">%data%</span><hr/>';
 
 var HTMLskillsStart = '<div class="skills-entry"></div>';
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
@@ -49,13 +49,14 @@ var HTMLschoolName = '<h3>%data%</h3>';
 var HTMLschoolDegree = '<h4>%data%</h4>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolMajor = '<em>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3><br>Online Courses</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineStart = '<div class="education-entry"></div>';
+var HTMLonlineClasses = '<h3>Online Courses</h3>';
+var HTMLonlineTitle = '<h4>%data%</h4>';
+var HTMLonlineSchool = '%data%</span>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineURL = '<a href="https://www.udacity.com/">%data%</a>';
 
 var googleMap = '<div id="map"></div>';
 
@@ -146,6 +147,12 @@ function initializeMap() {
       locations.push(work.jobs[job].location);
     }
 
+        // iterates through education locations and appends each location to
+    // the locations array
+    for (var edu in education.edu) {
+      locations.push(education.edu[edu].location);
+    }
+
     return locations;
   }
 
@@ -173,12 +180,11 @@ function initializeMap() {
     // or hover over a pin on a map. They usually contain more information
     // about a location.
     var infoWindow = new google.maps.InfoWindow({
-      content: name
+      content: '<h3>Marli was here:</h3>' + name
     });
 
-    // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
-      // your code goes here!
+       infoWindow.open(map, marker);
     });
 
     // this is where the pin actually gets added to the map.

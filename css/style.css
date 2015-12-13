@@ -1,3 +1,8 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body,
 div,
 ul,
@@ -9,230 +14,202 @@ h3,
 h4,
 h5,
 h6 {
-  padding:10;
-  margin:0;
-  font-family: "Roboto", sans-serif;
+    padding: 10;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
-
 .clear-fix {
-  overflow: auto;
+    overflow: auto;
 }
-
 .education-entry,
 .work-entry,
 .project-entry {
-  padding:10px 5%;
-  width: 100%;
+    padding: 10px 5%;
+    width: 100%;
 }
-
 h1 {
-  font-size: 40px;
-  color: #50d78a;
-  line-height: 48px;
-  display: inline;
-  text-transform: uppercase;
+    font-size: 40px;
+    color: #50d78a;
+    line-height: 48px;
+    display: inline;
+    text-transform: uppercase;
 }
-
 h2 {
-  font-weight: 100;
-  font-size: 26px;
-  text-transform: uppercase;
-  color: #666666;
-  line-height: 29px;
-  padding-top: 20px;
+    font-weight: 100;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #556473;
+    padding-top: 15px;
 }
-
 h3 {
-  font-size: 18px;
-  color: #000;
-  line-height: 20px;
-  color: #566474;
+    font-size: 18px;
+    color: #000;
+    line-height: 20px;
+    color: #566474;
 }
-
 h4 {
-  font-weight: 100;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
-  padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
+    padding-bottom: 10px;
 }
-
 h5 {
-  padding:10px 5%;
-
+    padding: 10px 5%;
 }
-
-
 .date-text {
-  font-size: 12px;
-  color: #999;
-  line-height: 16px;
-  margin-bottom: 10px;
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+    margin-bottom: 10px;
 }
-
 .location-text {
-  font-size: 12px;
-  color: #999;
-  line-height: 16px;
-  margin-bottom: 10px;
-  float: right;
-
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+    margin-bottom: 10px;
+    float: right;
 }
-
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 18px;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
 }
-
 a {
-  color: #207fbb;
-  text-decoration: none;
-  margin-top: 10px;
+    font-size: 14px;
+    color: #207fbb;
+    text-decoration: none;
+    margin-top: 10px;
 }
-
 .welcome-message {
-  font-style: 100;
-  font-size: 14px;
-  color: #ededed;
-  line-height: 16px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    font-style: 100;
+    font-size: 14px;
+    color: #ededed;
+    line-height: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
 #skills-h3 {
-  font-weight: 100;
-  font-size: 20px;
-  color: #94a5a6;
-  padding-top: 7px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    color: #94a5a6;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
-
 .orange {
-  background-color: #50d78a;
+    background-color: #50d78a;
+    height: 40px;
 }
-
 .orange-text {
-  font-size: 14px;
-  font-weight: 500;
-  color: #50d78a;
+    font-size: 14px;
+    font-weight: 500;
+    color: #50d78a;
 }
-
+.grey-text {
+    font-size: 14px;
+    font-weight: 100;
+    color: #95a5a6;
+    text-transform: uppercase;
+}
 .white-text {
-  font-size: 14px;
-  font-weight: 100;
-  color: #fff;
-  line-height: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    line-height: 20px;
 }
-
 .gray {
-  background-color: #ecf0f1;
-  padding-bottom: 20px;
-  clear:both;
-  padding-left: 3%;
-  padding-right: 3%;
+    background-color: #ecf0f1;
+    clear: both;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 20px;
 }
-
 .white {
-  background-color: #ffffff;
-  padding-bottom: 15px;
-  clear:both;
-  padding-left: 3%;
-  padding-right: 3%;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    clear: both;
+    padding-left: 4%;
+    padding-right: 4%;
 }
-
 .dark-gray {
-  background-color: #566474;
+    background-color: #566474;
 }
-
 #header {
-  background-color: #566474;
+    background-color: #566474;
 }
-
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
 }
-
 .center-content {
-  padding: 2.5% 3%;
+    padding: 2.5% 4%;
 }
-
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
-
 .biopic {
-  float: left;
-  padding-right: 10px;
-  padding-top: 10px;
-  width: 200px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 200px;
 }
-
 img {
-  float: left;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  width: 40px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 40px;
 }
-
 span {
-  padding: 5px;
+    padding: 5px;
 }
-
 #lets-connect {
-  text-align: center;
+    text-align: center;
 }
-
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
+    #lets-connect {
+        margin-top: 5%;
+    }
 }
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 150px;
-  }
+@media only screen and (max-width: 900px) {
+    .biopic {
+        width: 150px;
+    }
 }
-
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 130px;
-  }
-  .welcome-message {
-    display: none;
-  }
-  h1 {
-  font-size: 26px;
+    #lets-connect {
+        margin-top: 10%;
+    }
+    .biopic {
+        width: 130px;
+    }
+    .welcome-message {
+        text-align: center;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
 }
-}
-
 #map {
-  display: block;
-  height: 100%;
-}
-
-#mapDiv {
-  height: 300px;
-  padding-bottom: 10%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
     display: block;
-  }
+    height: 100%;
+}
+#mapDiv {
+    height: 300px;
+    padding-bottom: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+    .biopic {
+        display: block;
+    }
 }
