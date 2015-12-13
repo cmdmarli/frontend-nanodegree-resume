@@ -49,12 +49,12 @@ var HTMLschoolName = '<h3>%data%</h3>';
 var HTMLschoolDegree = '<h4>%data%</h4>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em>Major: %data%</em>';
+var HTMLschoolMajor = '<p>Major: %data%</p';
 
 var HTMLonlineStart = '<div class="education-entry"></div>';
 var HTMLonlineClasses = '<h3>Online Courses</h3>';
 var HTMLonlineTitle = '<h4>%data%</h4>';
-var HTMLonlineSchool = '%data%</span>';
+var HTMLonlineSchool = '<p>%data%</span></p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<a href="https://www.udacity.com/">%data%</a>';
 
