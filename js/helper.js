@@ -45,7 +45,7 @@ var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<h3>%data%</h3>';
+var HTMLschoolName = '<a href="%url%" class="hlink">%data%</a>';
 var HTMLschoolDegree = '<h4>%data%</h4>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
@@ -56,7 +56,7 @@ var HTMLonlineClasses = '<h3>Online Courses</h3>';
 var HTMLonlineTitle = '<h4>%data%</h4>';
 var HTMLonlineSchool = '<p>%data%</span></p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<a href="https://www.udacity.com/">%data%</a>';
+var HTMLonlineURL = '<a href="https://www.udacity.com/" class="link">%data%</a>';
 
 var googleMap = '<div id="map"></div>';
 

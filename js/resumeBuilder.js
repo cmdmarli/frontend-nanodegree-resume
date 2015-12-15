@@ -1,3 +1,4 @@
+
 var bio = {
     "name": 'Marli du Plessis',
     "role": '| Front-end Developer',
@@ -71,52 +72,53 @@ var work = {
 
 work.display();
 
+
 /*
 Brands
 */
 
-var projects = {
-    "brands": [{
+var career = {
+    "projects": [{
         "title": 'Standard Bank',
         "role": 'Lead UI designer - Online banking',
         "dates": 'Current project',
         "description": '- Moving forward -',
-        "images": 'images/197x148_4.png'
+        "images": ['images/197x148_4.png']
     }, {
         "title": 'South African Tourism',
         "role": 'Digital Advertising - Team lead',
         "dates": '2014 - 2015',
         "description": '- A million new experiences awaits -',
-        "images": 'images/197x148_1.png'
+        "images": ['images/197x148_1.png']
     }, {
         "title": 'Vodacom',
         "role": 'Digital Advertising - Mid-creative',
         "dates": '2013-2014',
         "description": '- Power to you -',
-        "images": 'images/197x148_2.png'
+        "images": ['images/197x148_2.png']
     }, {
         "title": 'First National Bank',
         "role": 'Digital Advertising - Junior-creative',
         "dates": '2012-2014',
         "description": '- How can we help you -',
-        "images": 'images/197x148_3.png'
+        "images": ['images/197x148_3.png']
     }],
 
     display: function() {
-        var len = projects.brands.length;
+        var len = career.projects.length;
         for (var cnt = 0; cnt < len; cnt++)
         {
             $("#projects").append(HTMLprojectStart);
-            $("#projects").append(HTMLprojectImage.replace("%data%", projects.brands[cnt].images));
-            $("#projects").append(HTMLprojectTitle.replace("%data%", projects.brands[cnt].title));
-            $("#projects").append(HTMLprojectRole.replace("%data%", projects.brands[cnt].role));
-            $("#projects").append(HTMLprojectDates.replace("%data%", projects.brands[cnt].dates));
-            $("#projects").append(HTMLprojectDescription.replace("%data%", projects.brands[cnt].description));
+            $("#projects").append(HTMLprojectImage.replace("%data%", career.projects[cnt].images[0]));
+            $("#projects").append(HTMLprojectTitle.replace("%data%", career.projects[cnt].title));
+            $("#projects").append(HTMLprojectRole.replace("%data%", career.projects[cnt].role));
+            $("#projects").append(HTMLprojectDates.replace("%data%", career.projects[cnt].dates));
+            $("#projects").append(HTMLprojectDescription.replace("%data%", career.projects[cnt].description));
         }
     }
 };
 
-projects.display();
+career.display();
 
 
 /*
@@ -124,38 +126,40 @@ Education
 */
 
 var education = {
-    "edu": [{
-        "schoolName": 'North-West Univercity of Potchefstroom',
+    "schools": [{
+        "name": 'North-West University of Potchefstroom',
+        "url": 'http://www.nwu.ac.za/content/nwu-potchefstroom-campus',
         "degree": 'BA Graphic design',
-        "schoolDates": '2008-2011',
+        "date": '2011',
         "location": 'Potchefstroom, South Africa',
-        "major" : 'Multi-media'
+        "majors": ['Multi-media']
     }, {
-        "schoolName": 'Centurion High',
+        "name": 'Centurion High',
+        "url": 'http://hscenturion.co.za/',
         "degree": 'Matric with distinction',
-        "schoolDates": '2002-2007',
+        "date": '2007',
         "location": 'Centurion, South Africa',
-        "major" : 'NA'
+        "majors": ['NA']
     }],
     "crs": [{
-        "onlineCourse": 'Front-end development',
-        "onlineSchool" : 'Udacity Nano-degree',
-        "onlineURL": 'www.udacity.com',
-        "onlineDates": '2015-2016'
+        "onlineCourses": 'Front-end development',
+        "school" : 'Udacity Nano-degree',
+        "url": 'www.udacity.com',
+        "date": '2016'
     }],
-
 
 
     display: function() {
-        var len = education.edu.length;
+        var len = education.schools.length;
         for (var cnt = 0; cnt < len; cnt++)
+
         {
             $("#education").append(HTMLschoolStart);
-            $("#education").append(HTMLschoolLocation.replace("%data%", education.edu[cnt].location));
-            $("#education").append(HTMLschoolName.replace("%data%", education.edu[cnt].schoolName));
-            $("#education").append(HTMLschoolDegree.replace("%data%", education.edu[cnt].degree));
-            $("#education").append(HTMLschoolDates.replace("%data%", education.edu[cnt].schoolDates));
-            $("#education").append(HTMLschoolMajor.replace("%data%", education.edu[cnt].major));
+            $("#education").append(HTMLschoolLocation.replace("%data%", education.schools[cnt].location));
+            $("#education").append(HTMLschoolName.replace("%data%", education.schools[cnt].name).replace("%url%", education.schools[cnt].url));
+            $("#education").append(HTMLschoolDegree.replace("%data%", education.schools[cnt].degree));
+            $("#education").append(HTMLschoolDates.replace("%data%", education.schools[cnt].date));
+            $("#education").append(HTMLschoolMajor.replace("%data%", education.schools[cnt].majors[0]));
         }
 
         var len = education.crs.length;
@@ -163,14 +167,15 @@ var education = {
         {
             $("#education").append(HTMLonlineStart);
             $("#education").append(HTMLonlineClasses);
-            $("#education").append(HTMLonlineTitle.replace("%data%", education.crs[crs].onlineCourse));
-            $("#education").append(HTMLonlineSchool.replace("%data%", education.crs[crs].onlineSchool));
-            $("#education").append(HTMLonlineDates.replace("%data%", education.crs[crs].onlineDates));
-            $("#education").append(HTMLonlineURL.replace("%data%", education.crs[crs].onlineURL));
+            $("#education").append(HTMLonlineTitle.replace("%data%", education.crs[crs].onlineCourses));
+            $("#education").append(HTMLonlineSchool.replace("%data%", education.crs[crs].school));
+            $("#education").append(HTMLonlineDates.replace("%data%", education.crs[crs].date));
+            $("#education").append(HTMLonlineURL.replace("%data%", education.crs[crs].url));
         }
     }
 };
 
 education.display();
+
 
 $("#mapDiv").append(googleMap);

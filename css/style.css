@@ -75,11 +75,20 @@ p {
     color: #333;
     line-height: 18px;
 }
-a {
+.link {
     font-size: 14px;
-    color: #207fbb;
-    text-decoration: none;
-    margin-top: 10px;
+    color: #000;
+    line-height: 20px;
+    color: #566474;
+    text-decoration: underline;
+}
+.hlink {
+    font-size: 18px;
+    color: #000;
+    line-height: 20px;
+    color: #566474;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .welcome-message {
     font-style: 100;
